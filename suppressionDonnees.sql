@@ -1,5 +1,5 @@
 /* Suppression physique d’éléments de la table Étudiant*/
-TRUNCATE TABLE etudiant ;
+DELETE FROM etudiant ;
 
 /*Suppression physique de la table Téléphone*/
 DROP TABLE telephone ;

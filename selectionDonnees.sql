@@ -6,8 +6,12 @@ WHERE Id IN( SELECT IdEtudiant FROM telephone WHERE Indicatif = '514');
 
 /* Obtenir la liste (sans restrictions) de la table Étudiant et
 de la table Téléphone*/
-SELECT * FROM etudiant ;
-SELECT * FROM telephone ;
+SELECT *
+FROM etudiant 
+CROSS JOIN telephone;
+/* deuxieme methode pour la meme requete */
+SELECT *
+FROM etudiant, telephone ;
 
 /* Obtenir la liste des nom, prénom , rue, numéro et ville
 dans une seule ordonné par ordre alphabétique sur le le
